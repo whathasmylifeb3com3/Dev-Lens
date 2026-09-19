@@ -1,3 +1,5 @@
+import chrome from 'chrome';
+
 console.log("DevEnveloped background script loaded.");
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

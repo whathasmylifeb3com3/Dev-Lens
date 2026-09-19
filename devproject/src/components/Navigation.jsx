@@ -1,4 +1,4 @@
-function Navigation({ currentPage, onNavigate }) {
+function Navigation({ onNavigate }) {
   /* ### TO-DO ### 
   // Add accesibility/screen reader support */
   return (
