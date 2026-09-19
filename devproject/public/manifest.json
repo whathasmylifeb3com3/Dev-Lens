@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "DevProject",
+  "version": "0.1.0",
+  "description": "A developer-learning browser extension.",
+  "action": {
+    "default_title": "DevProject"
+  },
+  "permissions": []
+}
