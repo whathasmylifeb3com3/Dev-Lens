@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "DevProject",
+  "version": "0.1.0",
+  "description": "A developer-learning browser extension.",
+  "action": {
+    "default_title": "DevProject"
+  },
+   "background": {
+    "service_worker": "chrome/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs", 
+    "storage",
+    "sidePanel"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

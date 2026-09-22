@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "DevLens",
+  "version": "0.1.0",
+  "description": "A developer-learning browser extension.",
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_title": "DevLens"
+  },
+
+  "sidebar_action": {
+    "default_title": "DevLens",
+    "default_panel": "sidepanel.html"
+  },
+
+  "background": {
+    "scripts": [
+      "opera/background.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

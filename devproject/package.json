@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:chrome",
+    "build:chrome": "vite build --mode chrome",
+    "build:opera": "vite build --mode opera",
     "lint": "eslint .",
     "preview": "vite preview"
   },

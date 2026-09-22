@@ -1,11 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.app {
+  width: 400px;
+  min-height: 500px;
+  background: #1f2937;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid #374151;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #374151;
+}
+
+nav button {
+  padding: 0.6rem;
+  border: 0;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #374151;
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
 }
 
-h1 {
-  margin: 0;
+main h2 {
+  margin-top: 0;
 }
