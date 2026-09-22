@@ -1,3 +1,41 @@
+# DevProject Extension
+
+## Build the extensions
+
+Build either browser target from the `devproject` directory:
+
+```bash
+npm run build:chrome
+npm run build:opera
+```
+
+The unpacked extensions are written to `dist/chrome` and `dist/opera`.
+
+## Load the side panel in Chrome
+
+1. Build the Chrome extension:
+
+   ```bash
+   npm run build:chrome
+   ```
+
+2. Open `chrome://extensions`.
+3. Enable **Developer mode**.
+4. Click **Load unpacked** and select the `devproject/dist/chrome` folder.
+5. Pin **DevProject**, then click its toolbar icon. The side panel should open.
+
+After changing the source, run `npm run build:chrome`, return to
+`chrome://extensions`, click **Reload** on DevProject, and click the toolbar
+icon again. Chrome loads the built extension from `dist/chrome`, not the project root.
+
+## Checks
+
+```bash
+npm run lint
+npm run build:chrome
+npm run build:opera
+```
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
